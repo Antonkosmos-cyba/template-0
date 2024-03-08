@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- <link rel="stylesheet" href="./css/antoon.css"> -->
+    <link rel="stylesheet" href="./css/muzik.css">
+    <link rel="icon" href="./images/muz.png">
+    <title>музыка</title>
+
+  </head>
+
+  <body style="padding-top: 20px; background-image: url(./images/fon2.gif);">
+    <div style="
+    width: fit-content;
+    top: 10px;
+    margin: 10px auto;
+    /* backdrop-filter: blur(10px); */
+    padding: 0 10px;">
+      <a style="color: #115f12;" href="./index.html">🎉 на главную...🎉</a>
+    </div>
+
+    <div style="
+    margin-left: 10px;
+    margin-right: 10px;">
+      <div class="wrapper">
+        <!-- ** модуль слайдера -->
+        <!-- главный контейнер -->
+
+        <div class="image-slider">
+          <marquee direction="right" behavior="alternate">
+            <img style="max-width: 200px;" src="./images/samalk/rock.gif">
+            <img style="max-width: 200px;" src="./images/samalk/rock.gif">
+            <!-- <img style="max-width: 100px;" src="./images/samalk/rock.gif"> -->
+          </marquee>
+          <p class="title" style="color: #115f12;">музыка для хорошего настроения</p>
+          <!-- Обязательная оболочка -->
+          <div class="swiper-wrapper">
+            <!-- Слайды dct -->
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <video src="./media/video/d2.mp4" controls="controls" width="100%" height="auto"></video>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <video src="./media/video/d.mp4" controls="controls" width="100%" height="auto"></video>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <video src="./media/video/pa2.mp4" controls="controls" width="100%" height="auto" poster=""></video> </div> </div> -->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <video src="./media/video/ys.mp4" controls="controls" width="100%" height="auto" poster="./images/ys.webp"></video> </div> </div> -->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <section class="h-auto max-w-[500px] rounded-3xl bg-green-400 mb-3"> <img class="img2 rounded-2xl" src="./images/m.jpg"> <div class="bruch"> <div class='left text-[26px] px-2 '> <p>Марина Алиева</p> <p class="text-[22px]">песня: <i><br>"С Днем Рождения"</i> </p> </div> <div class='right'> <audio id='demo' src="./media/muz/den.mp3"></audio> <button id='play' type="submit" style="background-image: url('./images/player.png');" class="bg-no-repeat bg-center bg-cover"></button> <button id='pause' type="submit" style="background-image: url('./images/pauza2.png');" class="bg-no-repeat bg-center bg-cover "></button> </div> <script> document .getElementById("play") .onclick = function () { document .getElementById('demo') .play(); }; document .getElementById("pause") .onclick = function () { document .getElementById('demo') .pause(); } </script> </div> </section> </div> </div>-->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <img src="./images/3.jpg" alt="Картинка"> <p class="subtitle">Google</p> </div> </div> -->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <img src="./images/4.jpg" alt="Картинка"> <p class="subtitle">Lorem</p> </div> </div> -->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <img src="./images/5.jpg" alt="Картинка"> <p class="subtitle">Lorem</p> </div> </div> -->
+            <!-- И так далее -->
+          </div>
+          <!-- ** Далее идут элементы управления -->
+          <!-- Стрелки управления -->
+          <div id="med_left" class="swiper-button-prev"></div>
+          <div id="med_right" class="swiper-button-next"></div>
+          <!-- Если нужна пагинация -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- scroll if needed -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+  </body>
+
+</html>

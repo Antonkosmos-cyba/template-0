@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <!-- <link rel="stylesheet" href="./css/antoon.css"> -->
+    <link rel="icon" href="./images/muz.png">
+    <title>Галерея</title>
+  </head>
+
+  <body style="background-image: url(./images/fon2.jpg);">
+    <div style="
+    width: fit-content;
+    top: 10px;
+    margin: 10px auto;
+    backdrop-filter: blur(5px);
+    padding: 0 10px;">
+      <a href="./index.html">🎉на главную...🎉</a>
+    </div>
+
+    <div style="margin-left: 10px;
+    margin-right: 10px;">
+      <div class="wrapper">
+        <!-- ** модуль слайдера -->
+        <!-- главный контейнер -->
+        <div class="image-slider">
+          <marquee direction="right" behavior="alternate">
+            <img style="max-width: 60px;" src="./images/samalk/ulibka.gif" alt="">
+            <img style="max-width: 60px;" src="./images/samalk/ulibka.gif" alt="">
+            <img style="max-width: 60px;" src="./images/samalk/ulibka.gif" alt="">
+            <!-- <img style="max-width: 90px;" src="./images/tanes.gif"> -->
+          </marquee>
+          <!-- <p class="title">фото Светланы</p> -->
+          <!-- Обязательная оболочка -->
+          <div class="swiper-wrapper">
+            <!-- Слайды dct -->
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <img style="border-radius: 20px;box-shadow: black 5px 5px 10px;" src="./images/gar/ir1.gif" alt="Картинка">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <img style="border-radius: 20px; box-shadow: black 5px 5px 10px;" src="./images/gar/ir2.jpeg" alt="Картинка">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <img style="border-radius: 20px; box-shadow: black 5px 5px 10px;" src="./images/gar/ir3.jpeg" alt="Картинка">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-slider_image">
+                <img style="border-radius: 20px; box-shadow: black 5px 5px 10px;" src="./images/gar/ir4.jpeg" alt="Картинка">
+              </div>
+            </div>
+
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <img style="border-radius: 20px;box-shadow: black 5px 5px 10px;" src="./images/gar/anna6.jpeg" alt="Картинка"> </div> </div> -->
+            <!-- <div class="swiper-slide"> <div class="image-slider_image"> <img style="border-radius: 20px;box-shadow: black 5px 5px 10px;" src="./images/gar/anna7.jpeg" alt="Картинка"> </div> </div> -->
+            <!-- И так далее -->
+          </div>
+          <!-- ** Далее идут элементы управления -->
+          <!-- Стрелки управления -->
+          <div id="med_left" class="swiper-button-prev"></div>
+          <div id="med_right" class="swiper-button-next"></div>
+          <!-- Если нужна пагинация -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- scroll if needed -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+
+</html>

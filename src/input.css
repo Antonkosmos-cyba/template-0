@@ -1,0 +1,7 @@
+    @font-face {
+        font-family: "Spectral";
+        src: url("../fonts/Spectral/Spectral.ttf") format("truetype");
+    }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
