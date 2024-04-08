@@ -15,7 +15,8 @@ const replace = require("gulp-replace");
 const gulpBabel = require("gulp-babel");
 const gulpUglify = require("gulp-uglify");
 const clean = require("gulp-clean");
-// const sync = require('browser-sync').create()
+const strip = require("gulp-strip-comments");
+const sync = require("browser-sync").create();
 // import imagemin from 'gulp-imagemin';
 const removeComments = require("gulp-strip-css-comments");
 function html() {
@@ -31,6 +32,7 @@ function html() {
           collapseWhitespace: true,
         })
       )
+      .pipe(strip())
       .pipe(dest("dist"))
   );
 }
@@ -101,14 +103,14 @@ function font() {
   return src("src/fonts/**").pipe(dest("dist/fonts"));
 }
 
-// function serve() {
-//     sync.init({
-//         server: './dist'
-//     })
-//     watch('src/**/**.html', series(html)).on('change', sync.reload)
-//     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
-// watch('src/js/**.js', series(js)).on('change', sync.reload)
-// }
+function serve() {
+  sync.init({
+    server: "./dist",
+  });
+  watch("src/**/**.html", series(html)).on("change", sync.reload);
+  watch("src/css/**.css", series(css)).on("change", sync.reload);
+  watch("src/js/**.js", series(js)).on("change", sync.reload);
+}
 exports.build = series(del, images, media, font, js, css, html);
-// exports.serve = series(clear, images, font, js, scss, html, serve)
+exports.serve = series(del, images, media, font, js, css, html, serve);
 // exports.clear = del
