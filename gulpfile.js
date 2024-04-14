@@ -53,13 +53,25 @@ function css() {
   );
 }
 
+function css_swip() {
+  return src("./node_modules/swiper/swiper-bundle.min.css").pipe(
+    dest("dist/css")
+  );
+}
+
 function js() {
   return (
     src("src/*.js")
       .pipe(gulpBabel())
       .pipe(gulpUglify())
       // .pipe(concat('index.js'))
-      .pipe(dest("dist"))
+      .pipe(dest("dist/js"))
+  );
+}
+
+function js_swip() {
+  return src("./node_modules/swiper/swiper-bundle.min.js").pipe(
+    dest("dist/js")
   );
 }
 
@@ -111,6 +123,27 @@ function serve() {
   watch("src/css/**.css", series(css)).on("change", sync.reload);
   watch("src/js/**.js", series(js)).on("change", sync.reload);
 }
-exports.build = series(del, images, media, font, js, css, html);
-exports.serve = series(del, images, media, font, js, css, html, serve);
+exports.build = series(
+  del,
+  images,
+  media,
+  font,
+  js,
+  js_swip,
+  css,
+  css_swip,
+  html
+);
+exports.serve = series(
+  del,
+  images,
+  media,
+  font,
+  js,
+  js_swip,
+  css,
+  css_swip,
+  html,
+  serve
+);
 // exports.clear = del
