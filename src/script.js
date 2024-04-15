@@ -1,140 +1,139 @@
 // В кавычнах помещается класс, который должен стать слайдером. В данном случае это
-new Swiper('.image-slider', {
-   navigation:{
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-   },
-   pagination: {
-      el: '.swiper-pagination',
-      
-      // // bullets
-      // type: 'bullets',
+new Swiper(".image-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
 
-      // // кликабельные
-      // clickable: true,
-      // // Динамические буллеты
-      // dynamicBullets: true,
-      // // Кастомные буллеты
-      // renderBullet: function (index, className) {
-      //    return '<span class="' + className + '">' + (index + 1) + '</span>';
-      // },
-// ------------------------------------------------------------
-      // Фракция
-      // type: 'fraction',
-      // renderFraction: function (currentClass, totalClass) {
-      //    return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>'
-      // },
-//-------------------------------------------------------------
-      // // Прогресс бар
-      // type: 'progressbar',
-   },
-//------------------------------------------------------------
-      //Скролл
-      scrollbar: {
-         el: '.swiper-scrollbar',
-         draggable: true
-      },
-      // включение/отключение перетаскивания на ПК
-      simulateTouch: true,
-      // Чувствительность свайпа
-      touchRatio: 1,
-      // Угод срабатывания свайпа
-      touchAngle: 45,
-      // Курсор перетаскивания
-      grabCursor: false,
-      // Переключение при клике на слайд
-      slideToClickedSlide: true,
+    // // bullets
+    // type: 'bullets',
 
-      // Упрвление клавиатурой
-      keyboard: {
-         enable: true,
-         onlyInViewport: true,
-         pageUpDown: true,
-      },
+    // // кликабельные
+    // clickable: true,
+    // // Динамические буллеты
+    // dynamicBullets: true,
+    // // Кастомные буллеты
+    // renderBullet: function (index, className) {
+    //    return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // },
+    // ------------------------------------------------------------
+    // Фракция
+    // type: 'fraction',
+    // renderFraction: function (currentClass, totalClass) {
+    //    return 'Фото <span class="' + currentClass + '"></span>' + ' из ' + '<span class="' + totalClass + '"></span>'
+    // },
+    //-------------------------------------------------------------
+    // // Прогресс бар
+    // type: 'progressbar',
+  },
+  //------------------------------------------------------------
+  //Скролл
+  // scrollbar: {
+  //    el: '.swiper-scrollbar',
+  //    draggable: true
+  // },
+  // включение/отключение перетаскивания на ПК
+  simulateTouch: true,
+  // Чувствительность свайпа
+  touchRatio: 1,
+  // Угод срабатывания свайпа
+  touchAngle: 45,
+  // Курсор перетаскивания
+  grabCursor: false,
+  // Переключение при клике на слайд
+  slideToClickedSlide: true,
 
-      // Управление колесом мыши
-      mousewheel: {
-         sensitivity: 1,
-         eventsTarget: ".image-slider"
-      },
+  // Упрвление клавиатурой
+  keyboard: {
+    enable: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
 
-      // Автовысота
-      autoHeight: true,
+  // Управление колесом мыши
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: ".image-slider",
+  },
 
-      // Стартовый слайд
-      initialSlide: 0,
+  // Автовысота
+  autoHeight: true,
 
-      // Бесконечное прокручивание
-      loop: true,
+  // Стартовый слайд
+  initialSlide: 0,
 
-      // Количество дублирующих слайдов
-      // loopedSlides: 3,
+  // Бесконечное прокручивание
+  loop: true,
 
-      // Автопрокрутка слайдов
-      // autoplay: {
-         // Задержка просмотра
-         // delay: 2000,
-         // Автопрокрутка
-         // stopOnLastSlyde: false,
-         // Остановка при любом действии
-         // disableOnInteraction: true,
-      // },
+  // Количество дублирующих слайдов
+  // loopedSlides: 3,
 
-      // Скорость смены слайдов
-      speed: 800,
+  // Автопрокрутка слайдов
+  // autoplay: {
+  // Задержка просмотра
+  // delay: 2000,
+  // Автопрокрутка
+  // stopOnLastSlyde: false,
+  // Остановка при любом действии
+  // disableOnInteraction: true,
+  // },
 
-      // Вертикальный слайдер
-      // direction: 'vertical',
+  // Скорость смены слайдов
+  speed: 800,
 
-      // & Эффекты --------------------------
-      // Листание по умолчанию
-      // effect: 'slide',
+  // Вертикальный слайдер
+  // direction: 'vertical',
 
-      // Смена прозрачности
-      // effect: 'fade',
-      // fadeEffect: {
-      // crossFade: true,
-      // }
+  // & Эффекты --------------------------
+  // Листание по умолчанию
+  // effect: 'slide',
 
-      // Переворот слайда
-      effect: 'flip',
-      flipEffect: {
-         slideShadows: true,
-         // Показ только активного слайда
-         limitRotation: true,
-      },
+  // Смена прозрачности
+  // effect: 'fade',
+  // fadeEffect: {
+  // crossFade: true,
+  // }
 
-      // Куб
-      // effect: 'cube',
-      // cubeEffect:{
-      //    slideShaddows: true,
-      //    shadow: true,
-      //    shadowOffset: 20,
-      //    shadowScale: 0.94,
-      // },
+  // Переворот слайда
+  effect: "flip",
+  flipEffect: {
+    slideShadows: true,
+    // Показ только активного слайда
+    limitRotation: true,
+  },
 
-      // Поток с наплывом
-      // effect: 'coverflow',
-      // coverFlowEffects: {
-         // Угол
-         // rotate: 20,
-         // Наложение
-         // stretch: 50,
-         // Тень
-      //    slideShadows:true,
-      // },
+  // Куб
+  // effect: 'cube',
+  // cubeEffect:{
+  //    slideShaddows: true,
+  //    shadow: true,
+  //    shadowOffset: 20,
+  //    shadowScale: 0.94,
+  // },
 
-      // Адаптив от одного до трёх
-      // breakpoints: {
-      //    320: {
-      //       slidePerView: 1,
-      //    },
-      //    480: {
-      //       slidePerView: 2,
-      //    },
-      //    992: {
-      //       slidePerView: 3,
-      //    }
-      // },
-     
+  // Поток с наплывом
+  // effect: 'coverflow',
+  // coverFlowEffects: {
+  // Угол
+  // rotate: 20,
+  // Наложение
+  // stretch: 50,
+  // Тень
+  //    slideShadows:true,
+  // },
+
+  // Адаптив от одного до трёх
+  // breakpoints: {
+  //    320: {
+  //       slidePerView: 1,
+  //    },
+  //    480: {
+  //       slidePerView: 2,
+  //    },
+  //    992: {
+  //       slidePerView: 3,
+  //    }
+  // },
 });
