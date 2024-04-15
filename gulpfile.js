@@ -63,6 +63,12 @@ function js() {
   );
 }
 
+function js_swip() {
+  return src("./node_modules/swiper/swiper-bundle.min.js").pipe(
+    dest("dist/js")
+  );
+}
+
 function del() {
   return src("dist").pipe(clean());
 }
