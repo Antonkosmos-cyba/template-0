@@ -52,6 +52,11 @@ function css() {
       .pipe(dest("dist/css"))
   );
 }
+function css_swip() {
+  return src("./node_modules/swiper/swiper-bundle.min.css").pipe(
+    dest("dist/css")
+  );
+}
 
 function js() {
   return (
@@ -117,6 +122,27 @@ function serve() {
   watch("src/css/**.css", series(css)).on("change", sync.reload);
   watch("src/js/**.js", series(js)).on("change", sync.reload);
 }
-exports.build = series(del, images, media, font, js, css, html);
-exports.serve = series(del, images, media, font, js, css, html, serve);
+exports.build = series(
+  del,
+  images,
+  media,
+  font,
+  js,
+  js_swip,
+  css_swip,
+  css,
+  html
+);
+exports.serve = series(
+  del,
+  images,
+  media,
+  font,
+  js,
+  js_swip,
+  css_swip,
+  css,
+  html,
+  serve
+);
 // exports.clear = del
