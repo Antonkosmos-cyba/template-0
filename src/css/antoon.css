@@ -139,3 +139,34 @@ body {
     80% {padding-top: 40px; margin-left: -200px; color: #1e0dda;}
     100% {padding-top: 100px;margin: 0 auto; color: green}
   } */
+
+.logo {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
+}
+
+.foto-logo {
+    max-width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 769px) {
+    .foto-logo {
+        width: 160px;
+    }
+}
+
+@media (max-width: 426px) {
+    .foto-logo {
+        width: 140px;
+    }
+}
+
+@media (max-width: 376px) {
+    .foto-logo {
+        width: 120px;
+    }
+}
