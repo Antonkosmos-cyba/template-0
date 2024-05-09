@@ -34,6 +34,7 @@ function html() {
       )
       .pipe(strip())
       .pipe(dest("dist"))
+      .pipe(sync.reload({ stream: true }))
   );
 }
 
@@ -50,6 +51,7 @@ function css() {
       // .pipe(concat('index.css'))
       .pipe(removeComments())
       .pipe(dest("dist/css"))
+      .pipe(sync.reload({ stream: true }))
   );
 }
 function css_swip() {
