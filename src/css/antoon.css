@@ -1,8 +1,24 @@
-body {
+/* body {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: auto auto;
-    background-size: auto auto;
+    background-position: center;
+    background-size: cover;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    background-image: url(../images/fon-c.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    padding-bottom: 100px;
+    z-index: -1;
 }
 
 #bdgroove2 {
@@ -149,6 +165,8 @@ footer {
     display: flex;
     justify-content: end;
     padding-right: 15px;
+    position: absolute;
+    top: 570px;
 }
 
 .foto-logo {
