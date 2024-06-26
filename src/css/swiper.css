@@ -19,7 +19,7 @@ html {
   font-size: 18px;
   font-family: "Spectral";
   line-height: 1.5;
-  
+
 }
 
 body {
@@ -81,6 +81,7 @@ a {
   cursor: pointer;
   font-size: 25px;
 }
+
 /* end of the ZERO */
 
 
@@ -91,17 +92,18 @@ a {
   min-height: 100vh;
 }
 
-@media(max-width: 760px){
+@media(max-width: 760px) {
   .wrapper {
     padding: 0px;
   }
-  
+
 }
 
 .title {
   font-size: 40px;
   font-weight: 400;
-  color: #fff;
+  color: #058007;
+  text-shadow: #fff 2px 2px 2px;
   text-align: center;
   /* background-color: #fff; */
   max-width: 100%;
@@ -110,17 +112,18 @@ a {
 }
 
 @media (max-width: 430px) {
-  .title{
+  .title {
     font-size: 17px;
   }
 }
 
 
 @media (max-width: 380px) {
-  .title{
+  .title {
     font-size: 15px;
   }
-  a{
+
+  a {
     font-size: 20px;
   }
 }
@@ -130,6 +133,7 @@ a {
     font-size: 19px;
   }
 }
+
 /* ----------------------------------- */
 /*& Флекс если нужен будет*/
 /* 
@@ -153,7 +157,8 @@ a {
 .image-slider_image {
   margin: 10px auto;
   text-align: center;
-  height: 55vh; /** можно регулировать высоту подписи */
+  height: 55vh;
+  /** можно регулировать высоту подписи */
   max-width: 500px;
   max-height: fit-content;
 }
@@ -179,15 +184,15 @@ a {
 }
 
 
-@media (max-width: 430px) { 
-  
-#med_left {
-  left: -5px;
-}
+@media (max-width: 430px) {
 
-#med_right {
-  right: -5px;
-}
+  #med_left {
+    left: -5px;
+  }
+
+  #med_right {
+    right: -5px;
+  }
 
 }
 
@@ -196,12 +201,14 @@ a {
 .image-slider .swiper-pagination {
   bottom: 10vh;
 }
+
 .subtitle {
   margin-top: 2vh;
   /* margin-bottom: 2vh; */
-  font-size: 1,5em;
-  text-align: center; 
+  font-size: 1, 5em;
+  text-align: center;
 }
+
 /* Размеры буллетов */
 .image-slider .swiper-pagination-bullet {
   width: 10px;
