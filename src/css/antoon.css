@@ -1,8 +1,8 @@
 body {
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: auto auto;
-    background-size: auto auto;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
 }
 
 #bdgroove2 {
